@@ -2,3 +2,5 @@ bazel_dep(
     name = "rules_go",
     version = "0.50.1",
 )
+
+bazel_dep(name = "rules_proto", version = "7.1.0")
