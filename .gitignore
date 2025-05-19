@@ -1,2 +1,3 @@
-MODULE.bazel.lock
+# Ignore Bazel build output directories and symlinks
 bazel-*
+MODULE.bazel.lock

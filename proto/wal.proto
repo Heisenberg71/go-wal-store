@@ -1,8 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./";
+option go_package = "simplewal/proto";
 
-message Wal {
-  string key = 1;
-  string value = 2;
+message WAL_Entry {
+    uint64 logSeqNumber = 1;
+    bytes data = 2;
+    uint32 CRC = 3;
+    // Optional field for checkpoint.
+    optional bool isCheckpoint = 4;
 }
